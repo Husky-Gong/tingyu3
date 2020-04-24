@@ -35,21 +35,35 @@
 
     </script>
 
+    <style type="text/css">
+        #divElement{
+            position:absolute;
+            top: 40%;
+            left: 40%;
+            margin-top: 0;
+            margin-left: 0;
+            width: 450px;
+            height: 200px;
+            background-color: #00bbee;
+        }
+    </style>
+
 </head>
-<body>
-<div style="margin-top: auto; margin-left: auto">
+<body style="background-color: black">
+<div id="divElement">
     <div id="p" class="easyui-panel" title="登录" style="width: auto;height: auto;padding: 10px; background-color: #00bbee" data-options="iconCls:'icon-save',collapsible:true">
-        <div style="margin: auto;">
+        <div style="margin-left: 57px;margin-top: 60px">
             <form>
-                <div style="margin: auto">
-                    <input name="aname" class="easyui-textbox" required="true" lable="用户名：" style="margin: auto">
+                <div style="margin-bottom:25px">
+                    <input name="aname" class="easyui-textbox" required="true" label="用户名:" style="width:75%">
                 </div>
-                <div style="margin: auto">
-                    <input name="apwd" class="easyui-textbox" required="true" label="密码：" style="margin: auto">
+                <div style="margin-bottom:35px">
+                    <input name="apwd" class="easyui-passwordbox" required="true" label="密&nbsp;&nbsp;&nbsp;码:" style="width:75%">
                 </div>
+
                 <div style="text-align: center">
-                    <a href="javascript:void(0)" class="easyui-linkbutton c6" iconCls="icon-ok" onclick="adminLogin()" style="width: auto; margin: auto">Login</a>
-                    <a href="javascript:void(0)" class="easyui-linkbutton c6" iconCls="icon-cancel" style="width: auto; margin: auto">Cancel</a>
+                    <a href="javascript:void(0)" class="easyui-linkbutton c6" iconCls="icon-ok" onclick="adminLogin()" style="width:90px;margin-right: 50px">Login</a>
+                    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel"  style="width:90px">Cancel</a>
                 </div>
             </form>
         </div>
