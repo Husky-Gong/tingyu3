@@ -6,6 +6,7 @@ import com.zx.service.TAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 
@@ -17,6 +18,7 @@ public class AdminController {
     private TAdminService tAdminService;
 
     @RequestMapping("/adminLogin")
+    @ResponseBody
     public boolean adminLogin(String aname, String apwd, HttpSession session){
         QueryWrapper<TAdmin> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("aname",aname).eq("apwd",apwd);
