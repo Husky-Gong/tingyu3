@@ -33,18 +33,6 @@
 
         <property name="typeAliasesPackage" value="com.bjsxt.pojo"></property>
 
-        <!--配置mybatisPlus中分页插件-->
-        <property name="plugins">
-            <array>
-                <bean id="p" class="com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor">
-                    <!--指定数据库方言 mysql 增加limit-->
-                    <property name="dialect" value="mysql"></property>
-                </bean>
-
-            </array>
-
-        </property>
-
         <!--mybatisPlus中全局配置策略-->
         <!-- <property name="globalConfig" ref="globalConfig"></property>-->
 
